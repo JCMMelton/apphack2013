@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<script>
 		$(document).ready(function(){
 			$("#camera").hide();
@@ -37,52 +37,7 @@
 		});
 	</script>
 
-<style>
-	#wrapper{
-		height: 400px;
-		width: 270px;
-	}
-	#logo{
-		height: 300px;
-		width: 270px;
-		background-color: black;
-		background-image: url("snap_a_shirt_logo.png");
-	}
-	#camera{
-		height: 300px;
-		width: 270px;
-		background-color: blue;
-		/*background-image: url("snap_a_shirt_logo.png");*/
-	}
-	#camera div{
-		height: 270px;
-		width: 270px;
-	}
-	#camera .button{
-		height: 30px;
-		width: 270px;
-		text-align: center;
-		background-color: gray;
-	}
-	#photo{
-		height: 300px;
-		width: 270px;
-		background-color: gray;
-		/*background-image: url("snap_a_shirt_logo.png");*/
-	}
-	#shirt{
-		height: 300px;
-		width: 270px;
-		background-color: green;
-		/*background-image: url("snap_a_shirt_logo.png");*/
-	}
-	#end{
-		height: 300px;
-		width: 270px;
-		background-color: red;
-		/*background-image: url("snap_a_shirt_logo.png");*/
-	}
-</style>
+
 
 </head>
 <body>
@@ -91,26 +46,30 @@
 			<!-- <img href="snap_a_shirt_logo.png" alt="logo"> -->
 		</div>
 		<div id="camera">
-			<div>camera</div>
+			<div class='pic'>camera</div>
 			<div class="button">Snap a Pic</div>
 		</div>
 		<div id="photo">
-			photo
+			<div class='pic'>photo</div>
 		</div>
 		<div id="shirt">
-			shirt
+			<div class='pic2'>shirt</div>
 		</div>
 		<div id="end">
-			end
+			<div class='pic3'>Shirt in the mail</div>
 		</div>
 		<div data-role="content">
 			
-			<div data-role="footer">
+			<!-- <div data-role="footer">
 				<a id="hide" href="" data-role:"button" data-icon="arrow-u">hide</a>
 				<a id="show" href="" data-role:"button" data-icon="arrow-d">show</a>
 				<a id="" href="" data-role:"button" data-icon="plus">add</a>
+<<<<<<< HEAD:index.html
                  <input id="myFileInput" type="file" accept="image/*;capture=camera">
 			</div>	
+=======
+			</div>	 -->
+>>>>>>> c1a9c723fe8379f78fa4fd6e0800d063a59efda0:app1.html
 
 		</div>
 	</div>
