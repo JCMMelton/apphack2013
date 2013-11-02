@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$("#camera").hide();
+			$("#photo").hide();
+			$("#shirt").hide();
+			$("#end").hide();
+			
+			$("#logo").click(function(){
+				$(this).hide();
+				$("#camera").show();
+				});
+			$("#camera").click(function(){
+				$(this).hide();
+				$("#photo").show();
+				});
+			$("#photo").click(function(){
+				$(this).hide();
+				$("#shirt").show();
+				});
+			$("#shirt").click(function(){
+				$(this).hide();
+				$("#end").show();
+				});
+			$("#end").click(function(){
+				$(this).hide();
+				$("#logo").show();
+				});
+
+		});
+	</script>
+
+<style>
+	#wrapper{
+		height: 400px;
+		width: 270px;
+	}
+	#logo{
+		height: 300px;
+		width: 270px;
+		background-color: black;
+		background-image: url("snap_a_shirt_logo.png");
+	}
+	#camera{
+		height: 300px;
+		width: 270px;
+		background-color: blue;
+		/*background-image: url("snap_a_shirt_logo.png");*/
+	}
+	#camera div{
+		height: 270px;
+		width: 270px;
+	}
+	#camera .button{
+		height: 30px;
+		width: 270px;
+		text-align: center;
+		background-color: gray;
+	}
+	#photo{
+		height: 300px;
+		width: 270px;
+		background-color: gray;
+		/*background-image: url("snap_a_shirt_logo.png");*/
+	}
+	#shirt{
+		height: 300px;
+		width: 270px;
+		background-color: green;
+		/*background-image: url("snap_a_shirt_logo.png");*/
+	}
+	#end{
+		height: 300px;
+		width: 270px;
+		background-color: red;
+		/*background-image: url("snap_a_shirt_logo.png");*/
+	}
+</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo">
+			<!-- <img href="snap_a_shirt_logo.png" alt="logo"> -->
+		</div>
+		<div id="camera">
+			<div>camera</div>
+			<div class="button">Snap a Pic</div>
+		</div>
+		<div id="photo">
+			photo
+		</div>
+		<div id="shirt">
+			shirt
+		</div>
+		<div id="end">
+			end
+		</div>
+		<div data-role="content">
+			
+			<div data-role="footer">
+				<a id="hide" href="" data-role:"button" data-icon="arrow-u">hide</a>
+				<a id="show" href="" data-role:"button" data-icon="arrow-d">show</a>
+				<a id="" href="" data-role:"button" data-icon="plus">add</a>
+			</div>	
+
+		</div>
+	</div>
+</body>
+</html>
